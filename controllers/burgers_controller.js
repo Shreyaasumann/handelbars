@@ -22,6 +22,10 @@ burger_router.get('/burger', function(req,res){
 });
 
 burger_router.post('/burger/add', function(req, res){
+
+  burger.create(req.body.burger_name, function(req,res) {
+
+    console.log(result);
   
   burger_call.insert(req.body.user_burger, function(data){
     res.redirect('/burger');
