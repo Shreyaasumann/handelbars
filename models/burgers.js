@@ -1,6 +1,6 @@
-var orm = require('../config/orm.js');
+var path = require('path')
+var orm = require(path.join(__dirname, '../config/orm.js'));
 
-var orm = require('../config/orm.js');
 var burger = {
 
   selectAll: function(callback) {
