@@ -16,7 +16,7 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-var routes = require(path.join(__dirname, "./controllers/burgersController.js"));
+var routes = require(path.join(__dirname, './controllers/burgers_controller'));
 
 app.use(routes);
 
